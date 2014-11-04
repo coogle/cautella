@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("cautela", "for cautela support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("cautela", "enable cautela support", "no");
+
+if (PHP_CAUTELA != "no") {
+	EXTENSION("cautela", "cautela.c");
+}
+
